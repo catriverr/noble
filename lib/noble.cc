@@ -40,6 +40,12 @@ namespace Noble {
     global_t global;
 };
 
+void Noble_LOG(string data, char* filename, int linenumber) {
+    std::cout << "[" << std::string(filename) << ":" << std::to_string(linenumber) << "] " << data;
+};
+
+#define LOG(text) Noble_LOG( text, __FILE__, __LINE__ )
+
 #define NOBLE_INIT true
 
 

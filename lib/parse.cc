@@ -10,10 +10,7 @@ int set_version_P() {
 
 static int setter_P = (int)set_version_P();
 
-namespace Noble {
-    namespace Parser {
-        
-    };
+struct Noble_Parser_Scope {
 };
 
 #define NOBLE_PARSER_INIT true
